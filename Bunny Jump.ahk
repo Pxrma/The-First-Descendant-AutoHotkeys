@@ -1,7 +1,7 @@
 macroOn := false
 
 F1::
-    macroOn := !macroOn  ;
+    macroOn := !macroOn  
     if (macroOn) {
         SetTimer, PressKeys, 100 
         SoundBeep, 1000, 200

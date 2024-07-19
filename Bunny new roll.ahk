@@ -21,7 +21,8 @@ PressKeys:
         Sleep, 5
         Send, {W up}
         Send, {Ctrl up}
-        Sleep, 750  
+        Sleep, 750
+        Send, v
         Send, {S down}
         Sleep, 5
         Send, {Ctrl down}
@@ -29,5 +30,6 @@ PressKeys:
         Send, {S up}
         Send, {Ctrl up}
         Sleep, 750  
+        Send, v
     }
     return
