@@ -6,9 +6,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #IfWinActive, The First Descendant
 macroOn := false
 interval := 1  ; Interval for the main loop in milliseconds
-AbilityDuration := 20050  ; Ability duration in milliseconds
+AbilityDuration := 2200  ; Ability duration in milliseconds
 vKeyLastPressed := 0
-abilityKey := "v"  ; Key for the ability
+abilityKey := ""  ; Key for the ability
 
 ^!::Reload
 
@@ -51,8 +51,8 @@ PressKeys:
         Sleep, 35
         
         ; Move mouse after pressing keys
-        step := 2  ; Smaller step for smoother movement
-        totalMovement := -425
+        step := 1  ; Smaller step for smoother movement
+        totalMovement := 16
         steps := Abs(totalMovement) // step
         remainingMovement := totalMovement
         Loop %steps% {
