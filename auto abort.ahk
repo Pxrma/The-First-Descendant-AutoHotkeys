@@ -32,8 +32,6 @@ CheckColor:
         if (color = 0xE4312D)
         {
             SoundBeep, 1100, 200
-            Send, {V}
-            Sleep, 250
             Send, {ESC}
             Sleep, 100 
             Click, 147, 334
